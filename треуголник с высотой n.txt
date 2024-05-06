@@ -1,0 +1,45 @@
+#include <iostream>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    bool flag = true;
+    int n, center, whitespace, quantity = 1;
+    float rounding_up;
+    char token = '*';
+    std::cout << "Введите высоту треугольника: ";
+    std::cin >> n;
+    while (flag == true) {
+    if (std::cin.fail()) {
+        std::cin.clear(); 
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+        std::cout << "Ошибка ввода. Пожалуйста, введите целое число: ";
+        std::cin >> n;
+    }
+    else {
+        flag = false;
+    }
+    }
+
+    rounding_up = n % 2;
+    if (rounding_up <= 1) {
+        center = n / 2 + 1;
+    }
+    else {
+        center = n / 2;
+    }
+    whitespace = center + 18;
+    for (int i = 0; i < n; i++) {
+        for (int i = 0; i < whitespace; i++) {
+            std::cout << " ";
+        }
+        for (int i = 0; i < quantity; i++) {
+            std::cout << token;
+        }
+        for (int i = 0; i < whitespace; i++) {
+            std::cout << " ";
+        }
+        std::cout << "\n";
+        whitespace--;
+        quantity += 2;
+    }
+    return 0;
+}
