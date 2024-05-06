@@ -5,13 +5,13 @@ int main() {
     int n, center, whitespace, quantity = 1;
     float rounding_up;
     char token = '*';
-    std::cout << "Ââåäèòå âûñîòó òğåóãîëüíèêà: ";
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‹ÑĞ¾Ñ‚Ñƒ Ñ‚Ñ€ĞµÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ°: ";
     std::cin >> n;
     while (flag == true) {
     if (std::cin.fail()) {
         std::cin.clear(); 
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
-        std::cout << "Îøèáêà ââîäà. Ïîæàëóéñòà, ââåäèòå öåëîå ÷èñëî: ";
+        std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ° Ğ²Ğ²Ğ¾Ğ´Ğ°. ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†ĞµĞ»Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
         std::cin >> n;
     }
     else {
